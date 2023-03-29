@@ -23,7 +23,7 @@ const HeroSection = () => {
                 </p>
                 <Link
                 to="projects"
-                className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+                className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700 hover:translate-y-1 transition-transform cursor-pointer"
                 activeClass="active"
                 spy={true}
                 smooth={true}
@@ -43,7 +43,7 @@ const HeroSection = () => {
                 offset={-100}
                 duration={500}
                 >
-                  <HiArrowDown size={35} className="animate-bounce"/>
+                  <HiArrowDown size={35} className="animate-bounce hover:translate-y-1 transition-transform cursor-pointer"/>
                 </Link>
         </div>
     </section>

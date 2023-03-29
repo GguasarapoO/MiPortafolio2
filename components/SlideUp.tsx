@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client" // this is a client component
 
 import React, { useEffect, useRef, ReactNode } from "react"

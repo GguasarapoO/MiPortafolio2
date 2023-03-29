@@ -1,5 +1,8 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import { Link } from 'react-scroll'
+import { HiArrowDown, HiArrowUp } from "react-icons/hi"
 
 const skills =[
     { skill: "Windows server" },
@@ -72,6 +75,7 @@ const AboutSection = () => {
                 </div>
             </div>
         </div>
+       
     </section>
   )
 }
