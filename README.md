@@ -35,6 +35,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Deployment on GitHub Pages
 
+
 This site is automatically built and deployed to GitHub Pages whenever changes are pushed to the `Miport2` branch.
 
 The deployment process is handled by a GitHub Actions workflow defined in `.github/workflows/deploy.yml`. This workflow builds the Next.js application into a static site (output to the `out/` directory) and then deploys this static content to the `gh-pages` branch.
