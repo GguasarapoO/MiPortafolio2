@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Or 'master' if that's your default branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Specify your Node.js version, align with package.json engines if possible
+
+      - name: Install dependencies
+        run: npm install # Or yarn install if you use Yarn
+
+      - name: Build static site
+        run: npm run build # This should generate the 'out' directory
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          # If you are deploying to a custom domain, add it here
+          # cname: your.custom.domain.com
+          # If you are deploying to a user or organization page (e.g., username.github.io),
+          # you might need to set publish_branch to 'main' or 'master'
+          # publish_branch: main
+          # For repository pages (username.github.io/repo-name), the default gh-pages branch is usually fine.
