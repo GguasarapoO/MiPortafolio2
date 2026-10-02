@@ -1,43 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portafolio Web — Henry Monroy
 
-## Getting Started
+Portafolio personal estático construido con **HTML, CSS y JavaScript** puros, sin frameworks ni proceso de build.
 
-First, run the development server:
+## Estructura
 
-```bash
-npm run dev
+```
+index.html      Página única (Hero, Sobre mí, Proyectos, Footer)
+css/styles.css  Estilos, tema claro/oscuro y responsive
+js/main.js      Menú móvil, toggle de tema y animaciones al hacer scroll
+assets/         Imágenes y favicon
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Desarrollo local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+No hay dependencias. Sirve el directorio con cualquier servidor estático:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+python3 -m http.server 8000
+# o
+npx serve .
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Abre [http://localhost:8000](http://localhost:8000).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Despliegue en GitHub Pages
 
-## Learn More
+El workflow `.github/workflows/deploy.yml` publica el sitio automáticamente en cada push a la rama `Miport2`, sin paso de build.
 
-To learn more about Next.js, take a look at the following resources:
+Requisito: en **Settings → Pages** del repositorio, selecciona **Source: GitHub Actions**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## Deployment on GitHub Pages
-
-
-This site is automatically built and deployed to GitHub Pages whenever changes are pushed to the `Miport2` branch.
-
-The deployment process is handled by a GitHub Actions workflow defined in `.github/workflows/deploy.yml`. This workflow builds the Next.js application into a static site (output to the `out/` directory) and then deploys this static content to the `gh-pages` branch.
-
-The live site can be accessed at: **[https://GguasarapoO.github.io/MiPortafolio2/](https://GguasarapoO.github.io/MiPortafolio2/)**
+El sitio queda disponible en **[https://gguasapoo.github.io/MiPortafolio2/](https://gguasapoo.github.io/MiPortafolio2/)**. Todas las rutas de assets son relativas, por lo que funciona tanto en el subpath de Pages como en local.
