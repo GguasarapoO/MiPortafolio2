@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Monroy | Consultor IT</title>
+    <meta name="description" content="Conoce a Henry Monroy y sus proyectos">
+    <meta property="og:title" content="Henry Monroy | Consultor IT">
+    <meta property="og:description" content="Conoce a Henry Monroy y sus proyectos">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/favicon1.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        // Aplica el tema antes de pintar para evitar parpadeo (equivale a next-themes, enableSystem)
+        (function () {
+            var theme = localStorage.getItem('theme');
+            if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <div class="navbar-row">
+                <a href="#home" class="brand nav-link">Henry Monroy</a>
+                <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Abrir menú" aria-expanded="false">
+                    <svg id="icon-menu" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    <svg id="icon-close" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <nav id="nav-menu" class="nav-menu">
+                <a href="#home" class="nav-link">Inicio</a>
+                <a href="#about" class="nav-link">Sobre mí</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                    <svg id="icon-sun" class="icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg id="icon-moon" class="icon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-img-col">
+                    <img class="hero-img" src="assets/CIMG0017.JPG" alt="Henry Monroy - Foto profesional" width="300" height="300">
+                </div>
+                <div class="hero-text-col">
+                    <h1 class="hero-title">Saludos, Soy Henry</h1>
+                    <p class="hero-subtitle">
+                        Soy
+                        <span class="text-teal-strong">Licenciado en Computación</span>
+                        orientado al trabajo remoto. Trabajando en contribuir al ciclo de vida de software
+                        haciendo más fácil que entregue valor y genere impacto.
+                    </p>
+                    <a href="#projects" class="btn-primary">Proyectos</a>
+                </div>
+            </div>
+            <div class="hero-arrow">
+                <a href="#about" aria-label="Ir a Sobre mí">
+                    <svg class="icon-arrow bounce" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Sobre mí -->
+        <section id="about" class="about">
+            <h2 class="section-title">Sobre mí<hr class="section-hr"></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3 class="about-heading">¡Conoce más sobre mí!</h3>
+                    <p>
+                        Hola, mi nombre es Henry Monroy y soy un
+                        <strong>intuitivo</strong>,
+                        <strong>explorador</strong> y
+                        <strong>automotivado</strong> consultor IT.
+                    </p>
+                    <p>
+                        Toda mi vida laboral he trabajado en el área de tecnología.
+                        Cuento con experiencia en el área tecnológica SysAdmin/SysOps, desarrollo y HelpDesk.
+                        Me gradué de Licenciado en Computación en la Universidad Nueva Esparta en Caracas, Venezuela en el 2019.
+                    </p>
+                    <p>
+                        Tengo un vasto rango de intereses que me mantienen activo. Desde la lectura, entrenamiento físico hasta
+                        competir en torneos de deportes electrónicos.
+                        Estoy siempre buscando nuevas experiencias y el interés para mantenerme comprometido y aprender cosas nuevas.
+                    </p>
+                    <p>
+                        Creo que nunca
+                        <strong class="text-teal">se debe dejar de aprender</strong>
+                        y eso es lo que me he comprometido a hacer. Tengo pasión por la tecnología y siempre deseo traspasar los límites
+                        de lo posible. Me emociona ver a dónde me dirige este camino y siempre estar dispuesto a nuevas oportunidades.
+                    </p>
+                </div>
+                <div class="about-skills">
+                    <h3 class="about-heading">Mis habilidades</h3>
+                    <div class="skills-list">
+                        <span class="skill-chip">Windows Server</span>
+                        <span class="skill-chip">Linux Server</span>
+                        <span class="skill-chip">Jenkins</span>
+                        <span class="skill-chip">Docker</span>
+                        <span class="skill-chip">Kubernetes</span>
+                        <span class="skill-chip">GCP</span>
+                        <span class="skill-chip">Azure</span>
+                        <span class="skill-chip">AWS</span>
+                        <span class="skill-chip">GitHub Actions</span>
+                        <span class="skill-chip">Microsoft Power Platform</span>
+                        <span class="skill-chip">UiPath</span>
+                        <span class="skill-chip">React</span>
+                        <span class="skill-chip">.Net</span>
+                    </div>
+                    <img class="about-img" src="assets/7127986.jpg" alt="Gráfico decorativo de la sección Sobre mí" width="325" height="325">
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Proyectos<hr class="section-hr"></h2>
+            <div class="projects-list">
+                <article class="project slide-up">
+                    <div class="project-img-col">
+                        <a href="https://phanox.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/phanox.png" alt="Captura de Full Stack E-commerce App" class="project-img project-img-link">
+                        </a>
+                    </div>
+                    <div class="project-text-col">
+                        <h3 class="project-name">Full Stack E-commerce App</h3>
+                        <p class="project-desc">Aplicación e-commerce con diseño moderno y animaciones, capacidad de agregar y editar productos sobre la marcha usando Sanity, y todas las funcionalidades avanzadas de carrito y checkout.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GguasarapoO/ecommerce_sanity_stripe" target="_blank" rel="noopener noreferrer" aria-label="Repositorio en GitHub">
+                                <svg class="icon-lg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                            </a>
+                            <a href="https://phanox.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo">
+                                <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project slide-up">
+                    <div class="project-img-col">
+                        <a href="https://exercisesdb.netlify.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/ExercisesDB.png" alt="Captura de Fitness App" class="project-img project-img-link">
+                        </a>
+                    </div>
+                    <div class="project-text-col">
+                        <h3 class="project-name">Fitness App</h3>
+                        <p class="project-desc">Base de datos completa de ejercicios con la funcionalidad de elegir categorías de ejercicios y grupos musculares específicos, explorar más de mil ejercicios con ejemplos prácticos, paginación, detalles de ejercicios, videos relacionados de YouTube y ejercicios similares.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/GguasarapoO/project_fitness_app" target="_blank" rel="noopener noreferrer" aria-label="Repositorio en GitHub">
+                                <svg class="icon-lg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                            </a>
+                            <a href="https://exercisesdb.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Ver demo">
+                                <svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project slide-up">
+                    <div class="project-img-col">
+                        <img src="assets/scrape.png" alt="Captura de Amazon Web Scraper" class="project-img">
+                    </div>
+                    <div class="project-text-col">
+                        <h3 class="project-name">Amazon Web Scraper</h3>
+                        <p class="project-desc">Web Scraper enfocado en Amazon creado con React, Firebase y Bright Data.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <hr class="footer-hr">
+            <div class="footer-inner">
+                <div class="footer-copy">© 2025 Henry Monroy</div>
+                <div class="footer-social">
+                    <a href="https://github.com/GguasarapoO" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="icon-lg" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/junior.monroy/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="icon-lg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/henry-monroy-94122792/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="icon-lg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
