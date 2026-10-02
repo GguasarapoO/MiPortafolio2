@@ -500,6 +500,12 @@ html.dark .footer-social a {
         margin-top: 0;
     }
 
+    /* Si el menú móvil quedó abierto al ensanchar la ventana, los enlaces
+       vuelven a fila horizontal en desktop */
+    .nav-menu.open {
+        display: flex;
+    }
+
     .theme-btn {
         margin: 0;
     }
